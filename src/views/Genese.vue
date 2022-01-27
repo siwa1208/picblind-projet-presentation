@@ -1,9 +1,6 @@
 <template>
 <div class="genese">
-  <div>
-        <h1 class='title is-2
-            has-text-centered'>Genèse du projet</h1>
-    </div>
+  <Title titre="Genèse du projet" />
   <section class="section is-small">
     <div class="container">
         <div class="columns is-mobile is-centered">
@@ -56,8 +53,13 @@
 
 <script>
 
+import Title from '../components/layout/Title.vue'
+
 export default {
   name: 'Genese',
+  components: {
+    Title,
+  }
 }
 </script>
 

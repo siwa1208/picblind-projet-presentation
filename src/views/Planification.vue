@@ -1,9 +1,6 @@
 <template>
 <div class="planification">
-    <div>
-        <h1 class='title 
-            has-text-centered'>Planification du projet</h1>
-    </div>
+   <Title titre="Planification" />
     <section class="section is-small">
         <div class="container">
             <div class="columns is-mobile is-centered">
@@ -36,20 +33,22 @@
                 </div>
             </div>
             <br>
-            <div class="columns is-mobile is-centered">
-                <div class="column is-6 has-text-centered">
-                    <p class="title is-4">Gantt PFE - PicBlind</p>
-                    <img src="../assets/logo/Black.png" alt="logo picblind app">
-                </div>
-            </div>          
+            <Gantt titre="" />         
         </div>            
     </section>
 </div>
 </template>
 
 <script>
+import Title from '../components/layout/Title.vue'
+import Gantt from '../components/Gantt.vue'
+
 export default {
   name: 'Planification',
+  components: {
+      Title,
+      Gantt,
+  }
   }
 </script>
 

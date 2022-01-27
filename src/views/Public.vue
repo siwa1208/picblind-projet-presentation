@@ -1,9 +1,6 @@
 <template>
 <div class="public">
-    <div>
-        <h1 class='title 
-            has-text-centered'>Public ciblé</h1>
-    </div>
+    <Title titre="Public ciblé" />
     <section class="section is-small">
         <div class="container">
             <div class="columns is-mobile is-centered">
@@ -39,8 +36,14 @@
 </template>
 
 <script>
+
+import Title from '../components/layout/Title.vue'
+
 export default {
   name: 'Public',
+  components: {
+      Title,
+  }
   }
 </script>
 

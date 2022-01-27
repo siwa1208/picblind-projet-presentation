@@ -16,7 +16,7 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/genese',
+    path: '/',
     name: 'Genese',
     component: Genese
   },

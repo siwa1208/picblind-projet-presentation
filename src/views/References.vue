@@ -1,9 +1,6 @@
 <template>
 <div class="reference">
-    <div>
-        <h1 class='title 
-            has-text-centered'>Références scientifiques</h1>
-    </div>
+    <Title titre="Références scientifiques"/>
     <section class="section is-small">
         <div class="container">
             <div class="columns is-mobile is-centered">
@@ -51,8 +48,14 @@
 </template>
 
 <script>
+
+import Title from '../components/layout/Title.vue'
+
 export default {
   name: 'References',
+  components:{
+      Title,
+  }
   }
 </script>
 

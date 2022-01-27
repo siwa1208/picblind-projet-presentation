@@ -9,13 +9,11 @@
 <script>
 import Header from '@/components/layout/Header.vue'
 import Footer from '@/components/layout/Footer.vue'
-//import LoadingScreen from '@/components/SplashScreen.vue'
 
 export default {
   components: {
     Header,
     Footer,
-    //LoadingScreen,
   },
 }
 </script>

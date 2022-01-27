@@ -1,9 +1,6 @@
 <template>
 <div class="probleme">
-    <div>
-        <h1 class='title 
-            has-text-centered'>Problèmes rencontrés</h1>
-    </div>
+    <Title titre="Problèmes rencontrés" />
     <section class="section is-small">
         <div class="container">
             <div class="columns is-mobile is-centered">
@@ -24,7 +21,13 @@
 </template>
 
 <script>
+
+import Title from '../components/layout/Title.vue'
+
 export default {
   name: 'Probleme',
+  components:{
+      Title,
+  }
   }
 </script>

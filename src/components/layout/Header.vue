@@ -13,7 +13,7 @@
           <div class="navbar-start ">
             <hr class="navbar-divider">
             <div class="navbar-item">
-              <a class="navbar-item"><router-link to="/genese">Genèse du projet</router-link></a>
+              <a class="navbar-item"><router-link to="/">Genèse du projet</router-link></a>
               <a class="navbar-item"><router-link to="/objectifs">Objectifs</router-link></a>
               <a class="navbar-item"><router-link to="/public">Public</router-link></a>
               <a class="navbar-item"><router-link to="/references">Références scientifiques</router-link></a>

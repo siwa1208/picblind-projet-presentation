@@ -1,9 +1,6 @@
 <template>
 <div class="coommunication">
-    <div>
-        <h1 class='title 
-            has-text-centered'>Communication du projet</h1>
-    </div>
+    <Title titre="Communication du projet" />
     <section class="section is-small">
         <div class="container">
             <div class="columns is-mobile is-centered">
@@ -66,8 +63,14 @@
 </template>
 
 <script>
+
+import Title from '../components/layout/Title.vue'
+
 export default {
   name: 'Communication',
+  components: {
+      Title,
+  }
   }
 </script>
 <style scoped>

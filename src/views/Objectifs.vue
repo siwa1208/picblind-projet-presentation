@@ -1,9 +1,6 @@
 <template>
 <div class="objectifs">
-  <div>    
-    <h1 class="title 
-          has-text-centered">Objectifs</h1>
-  </div>
+  <Title titre="Objectifs" />>
   <section class="section is-small">
   <div class="container">
       <div class="columns is-mobile is-centered is-vcentered">
@@ -50,8 +47,13 @@
 
 <script>
 
+import Title from '../components/layout/Title.vue'
+
 export default {
   name: 'Objectifs',
+  components: {
+    Title,
+  }
   
   }
 </script>

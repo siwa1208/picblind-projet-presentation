@@ -1,9 +1,6 @@
 <template>
 <div class="contraintes">
-    <div>
-        <h1 class='title 
-            has-text-centered'>Contraintes techniques</h1>
-    </div>
+    <Title titre="Contraintes techniques" />
     <section class="section is-medium">
         <div class="container">
             <div class="columns is-mobile is-centered">
@@ -32,10 +29,18 @@
 </template>
 
 <script>
+
+import Title from '../components/layout/Title.vue'
+
 export default {
-  name: 'Contraintes',
-  }
+name: 'Contraintes',
+components: {
+    Title,
+}
+
+}
 </script>
+
 <style scoped>
 li {
     list-style-type :square;

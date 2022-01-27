@@ -1,26 +1,23 @@
 <template>
 <div class="analyse">
-    <div>
-        <h1 class='title 
-            has-text-centered'>Analyse du projet</h1>
-    </div>
+   <Title titre="Analyse du projet" />
+   <p class="title is-4 has-text-centered">Concurrences</p>
     <section class="section is-small">
         <div class="container">
-            <p class="title is-4">Concurrences</p>
-            <div class="columns is-mobile is-centered">
-                <div class="column">
+            <div class="columns is-mobile is-centered is-vcentered">
+                <div class="column has-text-centered">
                     <img src="../assets/img/PicSound.png" alt="logo picsound app">
                     <p>PicSound</p>
                 </div>
-                <div class="column">
+                <div class="column has-text-centered">
                         <img src="../assets/img/PicSong.png" alt="logo picsong app">
                         <p>PicSong</p>
                 </div>
-                <div class="column">
+                <div class="column has-text-centered">
                     <img src="../assets/img/Melobytes.png" alt="logo meloobytes app">
                     <p>Melobytes</p>
                 </div>
-                <div class="column">
+                <div class="column has-text-centered">
                     <img src="../assets/img/Be-my-eyes.png" alt="logo be my eyes app">
                     <p>Be my eyes</p>
                 </div>
@@ -61,8 +58,14 @@
 </template>
 
 <script>
+
+import Title from '../components/layout/Title.vue'
+
 export default {
   name: 'Analyse',
+  components: {
+      Title,
+  }
   }
 </script>
 
